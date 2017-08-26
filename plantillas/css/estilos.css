@@ -1,0 +1,13 @@
+.navbar{
+	margin-bottom: 0;
+}
+
+.jumbotron{
+	background:#689f38
+;
+	color:#fff;
+	padding: 20px 0;
+}
+.jumbotron .titulo{
+	font-size:80px;
+}
