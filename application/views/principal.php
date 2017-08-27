@@ -25,4 +25,3 @@
   </div>
  </section>
 
- <section class="main container"></section>

@@ -1,5 +1,10 @@
 
 <footer>
+   <div class="container">
+      <p>Universidad Autónoma Metropolitana, Unidad Iztapalapa </p>
+      <p>Av. San Rafael Atlixco No.186, Col.Vicentina Iztapalapa, 09340, Ciudad de México 
+            <a href="https://www.google.com.mx/maps/@19.360741,-99.0730205,16z">(Ver Mapa)</a></p>       
+   </div>  
     
 </footer>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
