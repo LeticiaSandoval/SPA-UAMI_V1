@@ -29,7 +29,7 @@ body {
 .jumbotron .titulo{
     font-size:80px;
 }
-.jumbotron .botonEntrar{
+.botonEntrar{
     font-size:10px;
     color:white;
     padding: 25px 25px 30px 25px;
@@ -50,6 +50,10 @@ h1, h2 {
 h3 {
     font-size: 30px;
     font-weight: 300;
+    color: white;
+}
+.regis{
+    color: white;
 }
 
 /* Contenidos y Formulario*/
@@ -72,6 +76,7 @@ h3 {
     -moz-border-radius: 10px 10px 0 0; 
     -webkit-border-radius: 10px 10px 0 0; 
     border-radius: 10px 10px 0 0;
+    background-color: #212F3C;
     
 }
 .myform-top-left { 
