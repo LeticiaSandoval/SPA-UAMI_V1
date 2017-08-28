@@ -5,7 +5,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-	<title><?=  $titulo ?> | SPA-AUMI </title>
+	<title><?=  $titulo ?> | SPA-UAMI </title>
 	<!-- Bootstrap -->
     <link href="<?= base_url()?>plantillas/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<?= base_url()?>plantillas/css/custom.css">
