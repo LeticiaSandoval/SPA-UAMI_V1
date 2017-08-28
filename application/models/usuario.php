@@ -4,7 +4,7 @@
 */
 class User extends CI_Model
 {
-	public function gerUser($correo ='')
+	public function getUser($correo ='')
 	{
      $result = $this->db->query("SELECT * FROM usuario WHERE id_usuario = '" . $id ."' LIMIT 1");
      if($result->num_rows()>0){
