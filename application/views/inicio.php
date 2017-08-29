@@ -9,8 +9,8 @@
  </section>
 
  <section>   
-      <div class="container">
-          <img src="<?= base_url() ?>plantillas/img/compu.jpg" class="img-thumbnail" width="450" height="300" ></a>
-       </div>
-       <br><br><br>
+    <div class="container">
+     <img src="<?= base_url() ?>plantillas/img/compu.jpg" class="img-thumbnail" width="450" height="300" ></a>
+    </div>
+    <br><br><br>
  </section>
