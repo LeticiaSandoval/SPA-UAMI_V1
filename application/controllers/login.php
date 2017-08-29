@@ -17,7 +17,7 @@ class Login extends CI_Controller
               	);
               $this->session->set_userdata($data);
 			}else{
-				header("Location:" . base_url());
+				header("Location:" . base_url()inicio/ini); 
 			}
 		}else{
 			header("Location:" . base_url());

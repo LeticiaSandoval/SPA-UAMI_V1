@@ -5,11 +5,8 @@
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-<<<<<<< HEAD
 	<title>SPA-AUM-I </title>
-=======
-	<title><?=  $titulo ?> | SPA-UAMI </title>
->>>>>>> 6d5881a679631f3361e3b99f8a0e728c5b896288
+	<title>< SPA-UAMI </title>
 	<!-- Bootstrap -->
     <link href="<?= base_url()?>plantillas/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<?= base_url()?>plantillas/css/estilos.css">

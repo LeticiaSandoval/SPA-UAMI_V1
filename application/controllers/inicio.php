@@ -25,7 +25,7 @@ class Inicio extends CI_Controller
 
 	}
     
-    public function perfil()
+    public function ini()
     {
 		$this->load->view("plantilla/head");
 		$this->load->view("header/headerPerfil");
