@@ -14,7 +14,7 @@
                   </div>
               </div>
          <div class="myform-bottom">
-          <form role="form" action="<?= base_url()?>login" method="post">
+          <form role="form" action="<?= base_url()?>principal_libro" method="post">
               <div class="form-group">
                   <input type="text" name="correo" placeholder="Correo electronico..." class="form-control" id="form-username">
               </div>
