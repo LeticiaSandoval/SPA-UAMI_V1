@@ -17,7 +17,8 @@ class Login extends CI_Controller
                 'login' =>true
               	);
               $this->session->set_userdata($data);
-              header("Location: " . base_url()); 
+              header("Location: " . base_url() . '/login/pagPrincipal');
+              
 
         	}else{
         		header("Location: " . base_url());  
