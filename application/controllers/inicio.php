@@ -11,7 +11,8 @@ class Inicio extends CI_Controller
 		$this->load->view("plantilla/header");
 		$this->load->view("inicio");
 		$this->load->view("plantilla/footer");
-		
+		$this->load->model('usuario');
+		$result = $this->usuario->getUsuario();
 
 		
 

@@ -2,17 +2,19 @@
 /**
 * 
 */
-class User extends CI_Model
+class Usuario extends CI_Model
 {
-	public function getUser($correo ='')
+	public function getUsuario($correo ='')
 	{
-     $result = $this->db->query("SELECT * FROM usuario WHERE id_usuario = '" . $id ."' LIMIT 1");
+	 
+     $result = $this->db->query("SELECT * FROM usuario WHERE email = '" . $correo ."' LIMIT 1");
      if($result->num_rows()>0){
      	return $result->row();
      }else{
      	return null;
      }
 	}
+}
 
 
 ?>
