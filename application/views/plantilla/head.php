@@ -5,7 +5,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-	<title>SPA-AUM-I </title>
+	<title>SPA-UAM-I </title>
 	<title>< SPA-UAMI </title>
 	<!-- Bootstrap -->
     <link href="<?= base_url()?>plantillas/css/bootstrap.min.css" rel="stylesheet">
