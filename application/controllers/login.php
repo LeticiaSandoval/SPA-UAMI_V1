@@ -17,14 +17,24 @@ class Login extends CI_Controller
                 'login' =>true
               	);
               $this->session->set_userdata($data);
+              header("Location: " . base_url()); 
 
         	}else{
         		header("Location: " . base_url());  
 
         	}
+
         }else{
         		header("Location: " . base_url()); 
         }
 	}
+
+    public function pagPrincipal()
+    {
+        $this->load->view("plantilla/head");
+        $this->load->view("header/headerPerfil");
+        $this->load->view("secundario");
+        $this->load->view("plantilla/footer2");
+    }
 }
 ?>
