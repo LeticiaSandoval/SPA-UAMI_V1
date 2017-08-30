@@ -26,15 +26,7 @@ class Inicio extends CI_Controller
 
 	}
     
-    public function ini()
-    {
-		$this->load->view("plantilla/head");
-		$this->load->view("header/headerPerfil");
-		$this->load->view("secundario");
-		$this->load->view("plantilla/footer2");
-
-		
-    }
+    
 
 }
 ?>
