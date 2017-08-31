@@ -34,7 +34,7 @@
         <ul class="dropdown-menu" role="menu">
         <li><a href="#"></a></li>
         <li role="separator" class="divider"></li>
-        <li><a href="#">Libro/capítulo de libro</a></li>       
+        <li><a href="<?= base_url()?>principal_libro">Libro/capítulo de libro</a></li>       
        </ul>
       </li>
       <li><a href="#">Infraestructura</a></li>

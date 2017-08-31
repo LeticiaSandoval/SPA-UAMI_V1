@@ -1,4 +1,4 @@
-<?
+<?php
 class Principal_Libro_Model extends CI_Model
 {
 	

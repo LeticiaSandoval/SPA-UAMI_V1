@@ -1,11 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Registro y Consulta del articulo</title>
-</head>
+<section class="jumbotron">
+ 
+  <div class="container">
+   <h1 class="titulo">SPA-UAM-I</h1>
+   <p>Sistema de productividad académica</p>
+  </div>
+ </section>
 <body>
-	<div class="col-lg-5">
+    <div class="row">
+	<div class="col-sm-6 col-sm-offset-3 myform-cont">
 		<form method="post" action="principal_libro/guardarRegistro">
+		<div class="myform-top">
+                  <div class="myform-top-left">
+                      <h3>Registrar</h3>
+                        <p class="regis">Ingrese los dsatos a registrar:</p>
+                  </div>
+                  </div>
 
 			<div class="form-group" col-lg-8>
 				<label>Título del Articulo</label>
@@ -72,9 +81,13 @@
 			<input type="reset" class="btn btn-ganger" value="Limpiar" name="">
 		</form>
 	</div>
+	</div>
+	</div>
 
-	<div class="col-lg-7">
-		<table border="2" class="table table-striped table-bordered table-hover table-condensed">
+	<br><br><br>
+
+	<div class="col-lg-5">
+		<table border="1" class="table table-striped table-bordered table-hover table-condensed">
 			<tr>
 			<th>TITULO DEL ARTICULO</th>
 			<th>AUTORES</th>
@@ -90,7 +103,7 @@
 			<th colspan="2">OPCIONES</th>
 			</tr>
 
-		<?
+		<?php
 			foreach ($Libros as $libro) {
 				echo "<tr>"."<td>".$libro->titulo_articulo."</td>".
 				"<td>".$libro->autores."</td>".
@@ -112,4 +125,3 @@
 		</table>
 	</div>
 </body>
-</html>

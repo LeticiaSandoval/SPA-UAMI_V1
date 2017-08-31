@@ -9,10 +9,22 @@ class Principal_Libro extends CI_Controller
 	}
 	
 	public function index(){
+
 		$Libros = $this->principal_libro_model->getLibros();
+
+		$this->load->view("plantilla/head");
+		$this->load->view("plantilla/header");
 		$this->load->view("formularios_libro/consultar_libro", compact("Libros"));
+		$this->load->view("plantilla/footer2");
+
+
 	}
 
+	public function libro(){
+
+		$this->load->view("plantilla/head");
+
+	}
 	public function guardarRegistro(){
 		if ($this->input->post()){
 
@@ -42,6 +54,8 @@ class Principal_Libro extends CI_Controller
 
 			$Libro = $this->principal_libro_model->getLibro($id_artLibCapítulo);
 
+			$this->load->view("plantilla/head");
+			$this->load->view("plantilla/header");
 			$this->load->view("formularios_libro/editar_libro", compact("Libro"));
 		}
 		else{
@@ -50,6 +64,8 @@ class Principal_Libro extends CI_Controller
 	}
 
 	public function actualizarLibro(){
+
+
 		if ($this->input->post()) {
 
 			$id_artLibCapítulo = $this->db->escape((int)$_POST["id_artLibCapítulo"]);
