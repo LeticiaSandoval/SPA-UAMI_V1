@@ -17,7 +17,7 @@ class Login extends CI_Controller
                 'login' =>true
               	);
               $this->session->set_userdata($data);
-              header("Location: " . base_url() . '/login/pagPrincipal');
+              header("Location: " . base_url() . '/inicio/pagPrincipal');
               
 
         	}else{
@@ -30,12 +30,6 @@ class Login extends CI_Controller
         }
 	}
 
-    public function pagPrincipal()
-    {
-        $this->load->view("plantilla/head");
-        $this->load->view("header/headerPerfil");
-        $this->load->view("secundario");
-        $this->load->view("plantilla/footer2");
-    }
+   
 }
 ?>

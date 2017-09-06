@@ -10,19 +10,23 @@ class Principal_Libro extends CI_Controller
 	
 	public function index(){
 
-		$Libros = $this->principal_libro_model->getLibros();
+		
 
-		$this->load->view("plantilla/head");
-		$this->load->view("plantilla/header");
-		$this->load->view("formularios_libro/consultar_libro", compact("Libros"));
+		$this->load->view("head/head2");
+		$this->load->view("header/headerMenu");
+		$this->load->view("formularios_libro/consultar_libro");
 		$this->load->view("plantilla/footer2");
 
 
 	}
 
 	public function libro(){
+		$Libros = $this->principal_libro_model->getLibros();
 
-		$this->load->view("plantilla/head");
+		$this->load->view("head/head2");
+    	$this->load->view("plantilla/header");
+    	$this->load->view("formularios_libro/tabla_libro", compact("Libros"));
+    	$this->load->view("plantilla/footer2");
 
 	}
 	public function guardarRegistro(){
@@ -93,6 +97,6 @@ class Principal_Libro extends CI_Controller
 		if ($this->principal_libro_model->eliminarLibro((int) $id_artLibCapítulo)) {
 				header("Location:".base_url()."principal_libro");
 			}
-		}
+	}
 }
 ?>

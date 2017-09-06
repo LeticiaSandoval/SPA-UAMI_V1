@@ -25,7 +25,14 @@ class Inicio extends CI_Controller
 		$this->load->view("plantilla/footer");
 
 	}
-    
+	 public function pagPrincipal()
+    {
+        $this->load->view("head/head2");
+        $this->load->view("header/headerPerfil");
+        $this->load->view("secundario");
+        $this->load->view("plantilla/footer2");
+    }
+       
     
 
 }

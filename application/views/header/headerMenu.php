@@ -24,24 +24,8 @@
     <!-- Aqui se iniciara el menu-->
     <div class="collapse navbar-collapse" id="navegacion" > 
      <ul class="nav navbar-nav">     
-      <li class="active" class="menu"><a href="#">Inicio</a></li>
-      <li><a href="#">Perfil</a></li>
-      <li><a href="#">Investigación</a></li>
-      <li class="dropdown">
-       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expended="false">
-       Productividad académica 
-       <span class="caret"></span>
-       </a>
-        <ul class="dropdown-menu" role="menu">
-        <li><a href="#"></a></li>
-        <li role="separator" class="divider"></li>
-        <li><a href="<?= base_url()?>principal_libro/libro">Libro</a></li>
-        <li><a href="#">Revista</a></li> 
-        <li><a href="#">Libro</a></li>      
-       </ul>
-      </li>
-      <li><a href="#">Infraestructura</a></li>
-     </ul> 
+      <li class="active" class="menu"><a href="<?= base_url()?>inicio/pagPrincipal">Inicio</a></li>          
+    </ul> 
     </div> 
   </nav>
  </header>

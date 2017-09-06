@@ -1,0 +1,32 @@
+.navbar{
+    margin-bottom: 0;
+
+   }
+
+body {
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+    line-height: 30px;
+    text-align: center;
+    background-color: #D4D6C8;
+
+}
+.imagenes{
+    float: right; 
+}
+.logouam{
+    float: left;
+}
+.jumbotron{
+    background:#689f38;
+    color:#fff;
+    padding: 5px 0;
+}
+.jumbotron .titulo{
+    font-size:30px;
+}
+.mimenu{
+     font-size:100px;
+}
