@@ -12,7 +12,7 @@
 <body>
     <div class="row">
 	<div class="col-sm-6 col-sm-offset-3 myform-cont">
-		<form class=class="form-inline" method="post" action="principal_libro/guardarRegistro">
+		<form class=class="form-inline" method="post" action="guardarRegistro">
 		<div class="form-group">
                   <div class="myform-top-left">
                       <h3>Registrar</h3>

@@ -88,14 +88,14 @@ class Principal_Libro extends CI_Controller
 
 			if ($this->principal_libro_model->actualizarLibro($id_artLibCapítulo, $titulo_articulo, $autores, $autoresExternos, $título_del_libro, (int)$núm_del_capítulo, $editores, $editorial, (int)$ISBN, (int)$año, $país, (int)$pág_ini, (int)$pág_fin)){
 
-				header("Location:".base_url()."principal_libro");	
+				header("Location:".base_url()."principal_libro/libro");	
 			}
 		}
 	}
 
 	public function eliminarLibro(int $id_artLibCapítulo){
 		if ($this->principal_libro_model->eliminarLibro((int) $id_artLibCapítulo)) {
-				header("Location:".base_url()."principal_libro");
+				header("Location:".base_url()."principal_libro/libro");
 			}
 	}
 }

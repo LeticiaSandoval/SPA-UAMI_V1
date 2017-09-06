@@ -41,8 +41,8 @@
 				"<td>".$libro->país."</td>".
 				"<td>".$libro->pág_ini."</td>".
 				"<td>".$libro->pág_fin."</td>".
-				"<td><a href='principal_libro/editar_Libro/".$libro->id_artLibCapítulo."'><span class='glyphicon glyphicon-user'></span>Editar</a></td>".
-				"<td><a href='principal_libro/eliminarLibro/".$libro->id_artLibCapítulo."'><span class='glyphicon glyphicon-user'></span>Eliminar</a></td>".
+				"<td><a href='editar_Libro/".$libro->id_artLibCapítulo."'><span class='glyphicon glyphicon-user'></span>Editar</a></td>".
+				"<td><a href='eliminarLibro/".$libro->id_artLibCapítulo."'><span class='glyphicon glyphicon-user'></span>Eliminar</a></td>".
 				"</tr>";
 			}
 		?>
