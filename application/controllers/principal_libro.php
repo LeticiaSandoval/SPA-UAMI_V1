@@ -10,11 +10,11 @@ class Principal_Libro extends CI_Controller
 	
 	public function index(){
 
-		
+		$Libros = $this->principal_libro_model->getLibros();
 
 		$this->load->view("head/head2");
 		$this->load->view("header/headerMenu");
-		$this->load->view("formularios_libro/consultar_libro");
+		$this->load->view("formularios_libro/consultar_libro", compact("Libros"));
 		$this->load->view("plantilla/footer2");
 
 
@@ -24,7 +24,7 @@ class Principal_Libro extends CI_Controller
 		$Libros = $this->principal_libro_model->getLibros();
 
 		$this->load->view("head/head2");
-    	$this->load->view("plantilla/header");
+    	$this->load->view("header/headerMenu");
     	$this->load->view("formularios_libro/tabla_libro", compact("Libros"));
     	$this->load->view("plantilla/footer2");
 
@@ -46,7 +46,7 @@ class Principal_Libro extends CI_Controller
 			$pág_fin=$this->db->escape($_POST["pág_fin"]);
 
 			if($this->principal_libro_model->setLibro($titulo_articulo, $autores, $autoresExternos, $título_del_libro, (int)$núm_del_capítulo, $editores, $editorial, (int)$ISBN, (int)$año, $país, (int)$pág_ini, (int)$pág_fin)){
-				header("Location:".base_url()."principal_libro");
+				header("Location:".base_url()."principal_libro/libro");
 			}
 		}
 	}
