@@ -21,8 +21,8 @@
          </div>
 
 			<div class="form-group" col-lg-10>
-				<label for="Título del Libro" class="col-lg-4">Título del Libro</label>
-				<input type="text" name="título_del_libro" class="form-inline">
+				<label for="Título del Capitulo" class="col-lg-4">Título del Capitulo</label>
+				<input type="text" name="titulo_capitulo" class="form-inline">
 			</div>
 
 			<div class="form-group" col-lg-8>
@@ -55,13 +55,23 @@
 			</div>
 
 			<div class="form-group" col-lg-8>
-				<label class="col-lg-4">Editorial</label> 
-				<input type="text" name="editorial" class="form-inline" required="true">
+				<label class="col-lg-4">Titulo del Libro</label> 
+				<input type="text" name="título_del_libro" class="form-inline" required="true">
 			</div>
 
 			<div class="form-group" col-lg-8>
-				<label class="col-lg-4">Editores</label>
+				<label class="col-lg-4">Numero del capitulo</label> 
+				<input type="text" name="núm_del_capítulo" class="form-inline" required="true">
+			</div>
+
+			<div class="form-group" col-lg-8>
+				<label class="col-lg-4">Editores</label> 
 				<input type="text" name="editores" class="form-inline" required="true">
+			</div>
+
+			<div class="form-group" col-lg-8>
+				<label class="col-lg-4">Editorial</label>
+				<input type="text" name="editorial" class="form-inline" required="true">
 			</div>
 
 			<div class="form-group" col-lg-8>
@@ -80,8 +90,8 @@
 			</div>
 			
 			<div class="form-group" col-lg-8>
-				<label class="col-lg-4">Páginas</label>
-				<input type="text" name="páginas" class="form-inline" required="true">
+				<label class="col-lg-4">Paginas</label>
+				<input type="text" name="paginas" class="form-inline" required="true">
 			</div>
 
 			<div class="form-group" col-lg-8>

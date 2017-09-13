@@ -14,35 +14,35 @@
 
 		<table border="1" class="table table-striped table-bordered table-hover table-condensed" class=".table-hover">
 			<tr>
-			<th>TITULO DEL ARTICULO</th>
+			<th>TITULO DEL LIBRO</th>
 			<th>AUTORES</th>
 			<th>AUTORES EXTERNOS</th>
-			<th>TITULO DEL LIBRO</th>
-			<th>NUMERO DEL CAPITULO</th>
-			<th>EDITORES</th>
+			<th>TIPO</th>
+			<th>ESTATUS</th>
 			<th>EDITORIAL</th>
+			<th>EDITORES</th>
 			<th>ISBN</th>
 			<th>PAIS</th>
-			<th>PÁGINA INICIO</th>
-			<th>PÁGINA FIN</th>
+			<th>PÁGINAS</th>
+			<th>URL</th>
 			<th colspan="2">OPCIONES</th>
 			</tr>
 
 		<?php
 			foreach ($Libros as $libro) {
-				echo "<tr>"."<td>".$libro->titulo_articulo."</td>".
+				echo "<tr>"."<td>".$libro->título_del_libro."</td>".
 				"<td>".$libro->autores."</td>".
 				"<td>".$libro->autoresExternos."</td>".
-				"<td>".$libro->título_del_libro."</td>".
-				"<td>".$libro->núm_del_capítulo."</td>".
-				"<td>".$libro->editores."</td>".
+				"<td>".$libro->tipo."</td>".
+				"<td>".$libro->estatus."</td>".
 				"<td>".$libro->editorial."</td>".
+				"<td>".$libro->editores."</td>".
 				"<td>".$libro->ISBN."</td>".
 				"<td>".$libro->país."</td>".
-				"<td>".$libro->pág_ini."</td>".
-				"<td>".$libro->pág_fin."</td>".
-				"<td><a href='editar_Libro/".$libro->id_artLibCapítulo."'><span class='glyphicon glyphicon-user'></span>Editar</a></td>".
-				"<td><a href='eliminarLibro/".$libro->id_artLibCapítulo."'><span class='glyphicon glyphicon-user'></span>Eliminar</a></td>".
+				"<td>".$libro->páginas."</td>".
+				"<td>".$libro->URL."</td>".
+				"<td><a href='editar_Libro/".$libro->id_libro."'><span class='glyphicon glyphicon-user'></span>Editar</a></td>".
+				"<td><a href='eliminarLibro/".$libro->id_libro."'><span class='glyphicon glyphicon-user'></span>Eliminar</a></td>".
 				"</tr>";
 			}
 		?>

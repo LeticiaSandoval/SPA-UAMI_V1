@@ -32,31 +32,31 @@ class Principal_Libro extends CI_Controller
 	public function guardarRegistro(){
 		if ($this->input->post()){
 
-			$titulo_articulo=$this->db->escape($_POST["titulo_articulo"]);
+			$título_del_libro=$this->db->escape($_POST["título_del_libro"]);
 			$autores=$this->db->escape($_POST["autores"]);
 			$autoresExternos=$this->db->escape($_POST["autoresExternos"]);
-			$título_del_libro=$this->db->escape($_POST["título_del_libro"]);
-			$núm_del_capítulo=$this->db->escape($_POST["núm_del_capítulo"]);
-			$editores=$this->db->escape($_POST["editores"]);
+			$tipo=$this->db->escape($_POST["tipo"]);
+			$estatus=$this->db->escape($_POST["estatus"]);
 			$editorial=$this->db->escape($_POST["editorial"]);
+			$editores=$this->db->escape($_POST["editores"]);
 			$ISBN=$this->db->escape($_POST["ISBN"]);
 			$año=$this->db->escape($_POST["año"]);
 			$país=$this->db->escape($_POST["país"]);
-			$pág_ini=$this->db->escape($_POST["pág_ini"]);
-			$pág_fin=$this->db->escape($_POST["pág_fin"]);
+			$páginas=$this->db->escape($_POST["páginas"]);
+			$URL=$this->db->escape($_POST["URL"]);
 
-			if($this->principal_libro_model->setLibro($titulo_articulo, $autores, $autoresExternos, $título_del_libro, (int)$núm_del_capítulo, $editores, $editorial, (int)$ISBN, (int)$año, $país, (int)$pág_ini, (int)$pág_fin)){
+			if($this->principal_libro_model->setLibro($título_del_libro, $autores, $autoresExternos, $tipo, $estatus, $editorial, $editores, (int)$ISBN, (int)$año, $país, (int)$páginas, $URL)){
 				header("Location:".base_url()."principal_libro/libro");
 			}
 		}
 	}
 
-	public function editar_Libro($id_artLibCapítulo = null){
-		if (!$id_artLibCapítulo == null) {
+	public function editar_Libro($id_libro = null){
+		if (!$id_libro == null) {
 
-			$id_artLibCapítulo = $this->db->escape((int)$id_artLibCapítulo);
+			$id_libro = $this->db->escape((int)$id_libro);
 
-			$Libro = $this->principal_libro_model->getLibro($id_artLibCapítulo);
+			$Libro = $this->principal_libro_model->getLibro($id_libro);
 
 			$this->load->view("plantilla/head");
 			$this->load->view("plantilla/header");
@@ -72,29 +72,29 @@ class Principal_Libro extends CI_Controller
 
 		if ($this->input->post()) {
 
-			$id_artLibCapítulo = $this->db->escape((int)$_POST["id_artLibCapítulo"]);
-			$titulo_articulo = $this->db->escape($_POST["titulo_articulo"]);
+			$id_libro = $this->db->escape((int)$_POST["id_libro"]);
+			$título_del_libro = $this->db->escape($_POST["título_del_libro"]);
 			$autores = $this->db->escape($_POST["autores"]);
 			$autoresExternos = $this->db->escape($_POST["autoresExternos"]);
-			$título_del_libro = $this->db->escape($_POST["título_del_libro"]);
-			$núm_del_capítulo = $this->db->escape($_POST["núm_del_capítulo"]);
-			$editores = $this->db->escape($_POST["editores"]);
+			$tipo = $this->db->escape($_POST["tipo"]);
+			$estatus = $this->db->escape($_POST["estatus"]);
 			$editorial = $this->db->escape($_POST["editorial"]);
+			$editores = $this->db->escape($_POST["editores"]);
 			$ISBN = $this->db->escape($_POST["ISBN"]);
 			$año = $this->db->escape($_POST["año"]);
 			$país = $this->db->escape($_POST["país"]);
-			$pág_ini = $this->db->escape($_POST["pág_ini"]);
-			$pág_fin = $this->db->escape($_POST["pág_fin"]);
+			$páginas = $this->db->escape($_POST["páginas"]);
+			$URL = $this->db->escape($_POST["URL"]);
 
-			if ($this->principal_libro_model->actualizarLibro($id_artLibCapítulo, $titulo_articulo, $autores, $autoresExternos, $título_del_libro, (int)$núm_del_capítulo, $editores, $editorial, (int)$ISBN, (int)$año, $país, (int)$pág_ini, (int)$pág_fin)){
+			if ($this->principal_libro_model->actualizarLibro($id_libro, $título_del_libro, $autores, $autoresExternos, $tipo, $estatus, $editorial, $editores, (int)$ISBN, (int)$año, $país, (int)$páginas, $URL)){
 
 				header("Location:".base_url()."principal_libro/libro");	
 			}
 		}
 	}
 
-	public function eliminarLibro(int $id_artLibCapítulo){
-		if ($this->principal_libro_model->eliminarLibro((int) $id_artLibCapítulo)) {
+	public function eliminarLibro(int $id_libro){
+		if ($this->principal_libro_model->eliminarLibro((int) $id_libro)) {
 				header("Location:".base_url()."principal_libro/libro");
 			}
 	}

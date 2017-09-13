@@ -8,22 +8,21 @@ class Principal_Libro_Model extends CI_Model
 	}
 
 	public function getLibros(){
-		return $this->db->query("SELECT * FROM libro_capitulo_libro")->result();
+		return $this->db->query("SELECT * FROM libro")->result();
 	}
-	public function setLibro(string $titulo_articulo, string $autores, string $autoresExternos, string $título_del_libro, int $núm_del_capítulo, string $editores, string $editorial, int $ISBN, int $año, string $país, int $pág_ini, int $pág_fin){
-		return $this->db->query(" INSERT INTO libro_capitulo_libro (titulo_articulo, autores, autoresExternos, título_del_libro, núm_del_capítulo, editores, editorial, ISBN, año, país, pág_ini, pág_fin) values ( {$titulo_articulo},{$autores},{$autoresExternos},{$título_del_libro},{$núm_del_capítulo},{$editores},{$editorial},{$ISBN},{$año},{$país},{$pág_ini},{$pág_fin}) " );
+	public function setLibro(string $título_del_libro, string $autores, string $autoresExternos, string $tipo, string $estatus, string $editorial, string $editores, int $ISBN, int $año, string $país, int $páginas, string $URL){
+		return $this->db->query(" INSERT INTO libro (título_del_libro, autores, autoresExternos, tipo, estatus, editorial, editores, ISBN, año, país, páginas, URL) values ( {$título_del_libro},{$autores},{$autoresExternos},{$tipo},{$estatus},{$editorial},{$editores},{$ISBN},{$año},{$país},{$páginas},{$URL}) " );
 	}
-
-	public function getLibro(int $id_artLibCapítulo){
-		return $this->db->query("SELECT id_artLibCapítulo, titulo_articulo, autores, autoresExternos, título_del_libro, núm_del_capítulo, editores, editorial, ISBN, año, país, pág_ini, pág_fin FROM libro_capitulo_libro WHERE id_artLibCapítulo = {$id_artLibCapítulo}")->row();
-	}
-
-	public function actualizarLibro(int $id_artLibCapítulo, string $titulo_articulo, string $autores, string $autoresExternos, string $título_del_libro, int $núm_del_capítulo, string $editores, string $editorial, int $ISBN, int $año, string $país, int $pág_ini, int $pág_fin){
-		return $this->db->query("UPDATE libro_capitulo_libro SET titulo_articulo={$titulo_articulo}, autores={$autores},autoresExternos={$autoresExternos}, título_del_libro={$título_del_libro}, núm_del_capítulo={$núm_del_capítulo}, editores={$editores}, editorial={$editorial}, ISBN={$ISBN}, año={$año}, país={$país}, pág_ini={$pág_ini}, pág_fin={$pág_fin} WHERE id_artLibCapítulo={$id_artLibCapítulo}");
+	public function getLibro(int $id_libro){
+		return $this->db->query("SELECT id_libro, título_del_libro, autores, autoresExternos, tipo, estatus, editorial, editores, ISBN, año, país, páginas, URL FROM libro WHERE id_libro = {$id_libro}")->row();
 	}
 
-	public function eliminarLibro(int $id_artLibCapítulo){
-		return $this->db->query("DELETE FROM libro_capitulo_libro WHERE id_artLibCapítulo = {$id_artLibCapítulo}");
+	public function actualizarLibro(int $id_libro, string $título_del_libro, string $autores, string $autoresExternos, string $tipo, string $estatus, string $editorial, string $editores, int $ISBN, int $año, string $país, int $páginas, string $URL){
+		return $this->db->query("UPDATE libro SET título_del_libro={$título_del_libro}, autores={$autores},autoresExternos={$autoresExternos}, tipo={$tipo}, estatus={$estatus}, editorial={$editorial}, editores={$editores}, ISBN={$ISBN}, año={$año}, país={$país}, páginas={$páginas}, URL={$URL} WHERE id_libro={$id_libro}");
+	}
+
+	public function eliminarLibro(int $id_libro){
+		return $this->db->query("DELETE FROM libro WHERE id_libro = {$id_libro}");
 
 	}
 
