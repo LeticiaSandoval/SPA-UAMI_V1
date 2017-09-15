@@ -14,7 +14,7 @@ class Principal_Libro extends CI_Controller
 
 		$this->load->view("head/head2");
 		$this->load->view("header/headerMenu");
-		$this->load->view("formularios_libro/consultar_libro", compact("Libros"));
+		$this->load->view("formularios_libro/registrar_libro", compact("Libros"));
 		$this->load->view("plantilla/footer2");
 
 

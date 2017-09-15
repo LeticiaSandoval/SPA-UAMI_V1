@@ -14,7 +14,7 @@ class Principal_Capitulo extends CI_Controller
 
 		$this->load->view("head/head2");
 		$this->load->view("header/headerMenu");
-		$this->load->view("formularios_capitulo/consultar_capitulo", compact("Capitulos"));
+		$this->load->view("formularios_capitulo/registrar_capitulo", compact("Capitulos"));
 		$this->load->view("plantilla/footer2");
 
 
