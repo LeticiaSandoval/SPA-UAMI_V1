@@ -56,6 +56,6 @@
 		</div>
 
 		 <div class="col-md-12 text-right" >
-       <a href="<?= base_url()?>principal_capitulo/"><button class="btn btn-default btn-lg" type="button" class="botonEntrar">Agregar capitulo </button></a>
+       <a href="<?= base_url()?>principal_capitulo"><button class="btn btn-default btn-lg" type="button" class="botonEntrar">Agregar capitulo </button></a>
  </div>
 	</div>

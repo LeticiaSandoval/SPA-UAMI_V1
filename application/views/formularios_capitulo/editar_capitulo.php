@@ -51,11 +51,11 @@
 			</div>
 			<div class="form-group" col-lg-8>
 				<label class="col-lg-4">Titulo del Libro</label> 
-				<input type="text" name="título_del_libro" class="form-control" required="true" value="<?php echo $Capitulo->editorial;?>">
+				<input type="text" name="título_del_libro" class="form-control" required="true" value="<?php echo $Capitulo->título_del_libro;?>">
 			</div>
 			<div class="form-group" col-lg-8>
 				<label class="col-lg-4">Numero del capitulo</label> 
-				<input type="text" name="núm_del_capítulo" class="form-control" required="true" value="<?php echo $Capitulo->editorial;?>">
+				<input type="text" name="núm_del_capítulo" class="form-control" required="true" value="<?php echo $Capitulo->núm_del_capítulo;?>">
 			</div>
 			<div class="form-group" col-lg-8>
 				<label>Editorial</label>
@@ -79,7 +79,7 @@
 			</div>
 			<div class="form-group" col-lg-8>
 				<label>Paginas</label>
-				<input type="text" name="paginas" class="form-control" required="true" value="<?php echo $Capitulo->páginas;?>">
+				<input type="text" name="paginas" class="form-control" required="true" value="<?php echo $Capitulo->paginas;?>">
 			</div>
 			<div class="form-group" col-lg-8>
 				<label>URL</label>

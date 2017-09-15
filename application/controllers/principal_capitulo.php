@@ -29,8 +29,9 @@ class Principal_Capitulo extends CI_Controller
     	$this->load->view("plantilla/footer2");
 
 	}
-	public function guardarRegistro(){
+	public function guardarRegistroCapitulo(){
 		if ($this->input->post()){
+			print_r($_POST);
 
 			$titulo_capitulo=$this->db->escape($_POST["titulo_capitulo"]);
 			$autores=$this->db->escape($_POST["autores"]);
@@ -39,7 +40,7 @@ class Principal_Capitulo extends CI_Controller
 			$estatus=$this->db->escape($_POST["estatus"]);
 			$título_del_libro=$this->db->escape($_POST["título_del_libro"]);
 			$núm_del_capítulo=$this->db->escape($_POST["núm_del_capítulo"]);
-			$editores=$this->db->escape($_POST["editories"]);
+			$editores=$this->db->escape($_POST["editores"]);
 			$editorial=$this->db->escape($_POST["editorial"]);
 			$ISBN=$this->db->escape($_POST["ISBN"]);
 			$año=$this->db->escape($_POST["año"]);
@@ -82,16 +83,16 @@ class Principal_Capitulo extends CI_Controller
 			$estatus=$this->db->escape($_POST["estatus"]);
 			$título_del_libro=$this->db->escape($_POST["título_del_libro"]);
 			$núm_del_capítulo=$this->db->escape($_POST["núm_del_capítulo"]);
-			$editores=$this->db->escape($_POST["editories"]);
+			$editores=$this->db->escape($_POST["editores"]);
 			$editorial=$this->db->escape($_POST["editorial"]);
 			$ISBN=$this->db->escape($_POST["ISBN"]);
 			$año=$this->db->escape($_POST["año"]);
 			$país=$this->db->escape($_POST["país"]);
-			$páginas=$this->db->escape($_POST["paginas"]);
+			$paginas=$this->db->escape($_POST["paginas"]);
 			$URL=$this->db->escape($_POST["URL"]);
 			
 
-			if ($this->principal_capitulo_model->actualizarCapitulo($id_capituloLibro, $titulo_capitulo, $autores, $autoresExternos, $tipo, $estatus,$título_del_libro, (int)$núm_del_capítulo, $editores, $editorial, (int)$ISBN, (int)$año, $país, (int)$paginas, $URL)){
+			if ($this->principal_capitulo_model->actualizarCapitulo($id_capituloLibro, $titulo_capitulo, $autores, $autoresExternos, $tipo, $estatus, $título_del_libro, (int)$núm_del_capítulo, $editores, $editorial, (int)$ISBN, (int)$año, $país, (int)$paginas, $URL)){
 
 				header("Location:".base_url()."principal_capitulo/capitulo");	
 			}
