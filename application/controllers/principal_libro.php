@@ -29,6 +29,7 @@ class Principal_Libro extends CI_Controller
     	$this->load->view("plantilla/footer2");
 
 	}
+
 	public function guardarRegistro(){
 		if ($this->input->post()){
 
@@ -59,7 +60,7 @@ class Principal_Libro extends CI_Controller
 			$Libro = $this->principal_libro_model->getLibro($id_libro);
 
 			$this->load->view("plantilla/head");
-			$this->load->view("plantilla/header");
+			$this->load->view("header/headerMenu");
 			$this->load->view("formularios_libro/editar_libro", compact("Libro"));
 		}
 		else{

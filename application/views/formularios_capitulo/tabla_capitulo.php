@@ -9,22 +9,25 @@
   </div>
  </section>
 <body>
+<h2>Capítulo de libro</h2>
+
+       <a href="<?= base_url()?>principal_capitulo">Agregar capítulo de libro</a>
 	<div class="col-lg-10">
 	<div class="table-responsive">
 
 		<table border="1" class="table table-striped table-bordered table-hover table-condensed" class=".table-hover">
 			<tr>
-			<th>TITULO DEL CAPITULO</th>
+			<th>TÍTULO DEL CAPÍTULO</th>
 			<th>AUTORES</th>
 			<th>AUTORES EXTERNOS</th>
 			<th>TIPO</th>
 			<th>ESTATUS</th>
-			<th>TITULO DEL LIBRO</th>
-			<th>NUMERO DEL CAPITULO</th>
+			<th>TÍTULO DEL LIBRO</th>
+			<th>NÚMERO DEL CAPÍTULO</th>
 			<th>EDITORES</th>
 			<th>EDITORIAL</th>
 			<th>ISBN</th>
-			<th>PAIS</th>
+			<th>PAÍS</th>
 			<th>PÁGINAS</th>
 			<th>URL</th>
 			<th colspan="2">OPCIONES</th>
@@ -54,8 +57,4 @@
 		</table>
 		</div>
 		</div>
-
-		 <div class="col-md-12 text-right" >
-       <a href="<?= base_url()?>principal_capitulo"><button class="btn btn-default btn-lg" type="button" class="botonEntrar">Agregar capitulo </button></a>
- </div>
 	</div>

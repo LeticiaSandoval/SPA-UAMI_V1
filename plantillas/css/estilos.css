@@ -1,6 +1,7 @@
 
 .navbar{
     margin-bottom: 0;
+    background-color: #C0C0C0;
 
    }
 
@@ -11,7 +12,7 @@ body {
     color: black;
     line-height: 30px;
     text-align: center;
-    background-color: white;
+    background-color: #C0C0C0;
 
 }
 .imagenes{
@@ -22,12 +23,12 @@ body {
 }
 
 .jumbotron{
-    background:#689f38;
+    background:#006400;
     color:#fff;
     padding: 20px 0;
 }
 .jumbotron .titulo{
-    font-size:80px;
+    font-size:50px;
 }
 .botonEntrar{
     font-size:10px;

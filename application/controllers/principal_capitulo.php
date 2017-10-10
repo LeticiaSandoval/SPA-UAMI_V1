@@ -62,8 +62,9 @@ class Principal_Capitulo extends CI_Controller
 			$Capitulo = $this->principal_capitulo_model->getCapitulo($id_capituloLibro);
 
 			$this->load->view("plantilla/head");
-			$this->load->view("plantilla/header");
+			$this->load->view("header/headerMenu");
 			$this->load->view("formularios_capitulo/editar_capitulo", compact("Capitulo"));
+		
 		}
 		else{
 			header("Location:".base_url()."principal_capitulo");

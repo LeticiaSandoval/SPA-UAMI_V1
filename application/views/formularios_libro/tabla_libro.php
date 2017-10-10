@@ -9,6 +9,10 @@
   </div>
  </section>
 <body>
+	<h2>Libro</h2>
+
+	 <a href="<?= base_url()?>principal_libro/"> Agregar libro</a>
+       </div>
 	<div class="col-lg-10">
 	<div class="table-responsive">
 
@@ -50,8 +54,4 @@
 		</table>
 		</div>
 		</div>
-
-		 <div class="col-md-12 text-right" >
-       <a href="<?= base_url()?>principal_libro/"><button class="btn btn-default btn-lg" type="button" class="botonEntrar">Agregar libro </button></a>
- </div>
 	</div>
