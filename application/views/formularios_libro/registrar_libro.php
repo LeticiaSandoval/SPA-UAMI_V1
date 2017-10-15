@@ -10,8 +10,8 @@
 
  </section>
 <body>
-    <div class="row">
-	<div class="col-md-8 col-sm-offset-2 myform-cont">
+    <div class="container">
+	<div class="col-sm-8 col-sm-offset-2 myform-cont">
 		<form class="form-horizontal" method="post" action="guardarRegistro">
 		<div class="myform-top">
             <div class="myform-top-left">
