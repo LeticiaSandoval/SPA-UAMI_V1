@@ -42,10 +42,10 @@ class Principal_Capitulo extends CI_Controller
 			$núm_del_capítulo=$this->db->escape($_POST["núm_del_capítulo"]);
 			$editores=$this->db->escape($_POST["editores"]);
 			$editorial=$this->db->escape($_POST["editorial"]);
-			$ISBN=$this->db->escape($_POST["ISBN"]);
-			$año=$this->db->escape($_POST["año"]);
+			$ISBN=$this->db->escape((int)$_POST["ISBN"]);
+			$año=$this->db->escape((int)$_POST["año"]);
 			$país=$this->db->escape($_POST["país"]);
-			$páginas=$this->db->escape($_POST["paginas"]);
+			$páginas=$this->db->escape((int)$_POST["paginas"]);
 			$URL=$this->db->escape($_POST["URL"]);
 
 			if($this->principal_capitulo_model->setCapitulo($titulo_capitulo, $autores, $autoresExternos, $tipo, $estatus,$título_del_libro, (int)$núm_del_capítulo, $editores, $editorial, (int)$ISBN, (int)$año, $país, (int)$paginas, $URL)){
@@ -86,10 +86,10 @@ class Principal_Capitulo extends CI_Controller
 			$núm_del_capítulo=$this->db->escape($_POST["núm_del_capítulo"]);
 			$editores=$this->db->escape($_POST["editores"]);
 			$editorial=$this->db->escape($_POST["editorial"]);
-			$ISBN=$this->db->escape($_POST["ISBN"]);
-			$año=$this->db->escape($_POST["año"]);
+			$ISBN=$this->db->escape((int)$_POST["ISBN"]);
+			$año=$this->db->escape((int)$_POST["año"]);
 			$país=$this->db->escape($_POST["país"]);
-			$paginas=$this->db->escape($_POST["paginas"]);
+			$paginas=$this->db->escape((int)$_POST["paginas"]);
 			$URL=$this->db->escape($_POST["URL"]);
 			
 
