@@ -27,6 +27,7 @@
 			<th>EDITORES</th>
 			<th>EDITORIAL</th>
 			<th>ISBN</th>
+			<th>AÑO</th>
 			<th>PAÍS</th>
 			<th>PÁGINAS</th>
 			<th>URL</th>
@@ -45,6 +46,7 @@
 				"<td>".$capitulo->editores."</td>".
 				"<td>".$capitulo->editorial."</td>".
 				"<td>".$capitulo->ISBN."</td>".
+				"<td>".$capitulo->año."</td>".
 				"<td>".$capitulo->país."</td>".
 				"<td>".$capitulo->paginas."</td>".
 				"<td>".$capitulo->URL."</td>".

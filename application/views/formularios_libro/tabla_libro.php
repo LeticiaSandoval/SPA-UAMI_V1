@@ -26,6 +26,7 @@
 			<th>EDITORIAL</th>
 			<th>EDITORES</th>
 			<th>ISBN</th>
+			<th>AÑO</th>
 			<th>PAIS</th>
 			<th>PÁGINAS</th>
 			<th>URL</th>
@@ -42,6 +43,7 @@
 				"<td>".$libro->editorial."</td>".
 				"<td>".$libro->editores."</td>".
 				"<td>".$libro->ISBN."</td>".
+				"<td>".$libro->año."</td>".
 				"<td>".$libro->país."</td>".
 				"<td>".$libro->páginas."</td>".
 				"<td>".$libro->URL."</td>".
