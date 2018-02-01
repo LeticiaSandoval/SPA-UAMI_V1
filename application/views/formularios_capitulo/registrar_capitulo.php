@@ -115,7 +115,7 @@
 			</div>
 			
 			<div class="form-group">
-				<label class="control-label col-md-2"">Páginas:</label>
+				<label class="control-label col-md-2">Páginas:</label>
 				<div class="col-md-10">
 					<input type="text" name="paginas" class="form-control" placeholder="Páginas" required="true">
 				</div> 

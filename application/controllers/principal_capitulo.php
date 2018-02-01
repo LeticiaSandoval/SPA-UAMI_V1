@@ -39,7 +39,7 @@ class Principal_Capitulo extends CI_Controller
 			$tipo=$this->db->escape($_POST["tipo"]);
 			$estatus=$this->db->escape($_POST["estatus"]);
 			$título_del_libro=$this->db->escape($_POST["título_del_libro"]);
-			$núm_del_capítulo=$this->db->escape($_POST["núm_del_capítulo"]);
+			$núm_del_capítulo=$this->db->escape((int)$_POST["núm_del_capítulo"]);
 			$editores=$this->db->escape($_POST["editores"]);
 			$editorial=$this->db->escape($_POST["editorial"]);
 			$ISBN=$this->db->escape((int)$_POST["ISBN"]);
@@ -83,7 +83,7 @@ class Principal_Capitulo extends CI_Controller
 			$tipo=$this->db->escape($_POST["tipo"]);
 			$estatus=$this->db->escape($_POST["estatus"]);
 			$título_del_libro=$this->db->escape($_POST["título_del_libro"]);
-			$núm_del_capítulo=$this->db->escape($_POST["núm_del_capítulo"]);
+			$núm_del_capítulo=$this->db->escape((int)$_POST["núm_del_capítulo"]);
 			$editores=$this->db->escape($_POST["editores"]);
 			$editorial=$this->db->escape($_POST["editorial"]);
 			$ISBN=$this->db->escape((int)$_POST["ISBN"]);
