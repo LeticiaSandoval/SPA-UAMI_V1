@@ -104,7 +104,7 @@
 			<div class="form-group">
 				<label class="control-label col-md-2">País:</label>
 				<div class="col-md-10">
-					
+					<input type="text" name="país" class="form-control" required="true" value="<?php echo $Capitulo->país;?>">
 				</div>
 			</div>
 			<div class="form-group">

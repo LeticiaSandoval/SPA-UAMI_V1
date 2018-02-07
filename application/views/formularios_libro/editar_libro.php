@@ -24,25 +24,25 @@
 		</div>
 
 		<div class="form-group">
-				<label class="control-label col-md-2">Titulo del Libro</label>
+				<label class="control-label col-md-2">Título del Libro:</label>
 				<div class="col-md-10">
 				   <input type="text"  name="título_del_libro" required="true" value="<?php echo $Libro->título_del_libro;?>" class="form-control" placeholder="Título del libro">
 				</div>
 		</div>	
 			<div class="form-group">
-				<label class="control-label col-md-2">Autores</label>
+				<label class="control-label col-md-2">Autores:</label>
 				<div class="col-md-10">
 				   <input type="text" name="autores" class="form-control" required="true" value="<?php echo $Libro->autores;?>">
 				</div>
 			</div>
 			<div class="form-group" col-lg-8>
-				<label class="control-label col-md-2">Autores externos</label>
+				<label class="control-label col-md-2">Autores externos:</label>
 				<div class="col-md-10">
 				   <input type="text" name="autoresExternos" class="form-control" required="true" value="<?php echo $Libro->autoresExternos;?>">
 				</div>
 			</div>
 			<div class="form-group" col-lg-8>
-				<label class="control-label col-sm-2">Tipo</label>
+				<label class="control-label col-sm-2">Tipo:</label>
 				<div class="col-md-10">
 					<select name="tipo" class="form-control" required="true">
 					<option value="Docencia">Docencia</option>
@@ -52,7 +52,7 @@
 				</div>
 			</div>
 			<div class="form-group" col-lg-8>
-				<label class="control-label col-sm-2">Estatus</label>
+				<label class="control-label col-sm-2">Estatus:</label>
 				<div class="col-md-10">
 					<select name="estatus" class="form-control" required="true">
 					<option value="Aceptado">Aceptado</option>
@@ -63,43 +63,43 @@
 				</div>
 			</div>
 			<div class="form-group" col-lg-8>
-				<label class="control-label col-sm-2">Editorial</label>
+				<label class="control-label col-sm-2">Editorial:</label>
 				<div class="col-md-10">
 				  <input type="text" name="editorial" class="form-control" required="true" value="<?php echo $Libro->editorial;?>">
 				</div>
 			</div>
 			<div class="form-group" col-lg-8>
-				<label class="control-label col-sm-2">Editores</label>
+				<label class="control-label col-sm-2">Editores:</label>
 				<div class="col-md-10">
 				  <input type="text" name="editores" class="form-control" required="true" value="<?php echo $Libro->editores;?>">
 				</div>
 			</div>
 			<div class="form-group" col-lg-8>
-				<label class="control-label col-sm-2">ISBN</label>
+				<label class="control-label col-sm-2">ISBN:</label>
 				<div class="col-md-10">
 				  <input type="text" name="ISBN" class="form-control" required="true" value="<?php echo $Libro->ISBN;?>">
 				</div>
 			</div>
 			<div class="form-group" col-lg-8>
-				<label class="control-label col-sm-2">Año</label>
+				<label class="control-label col-sm-2">Año:</label>
 				<div class="col-md-10">
 				 <input type="text" name="año" class="form-control" required="true" value="<?php echo $Libro->año;?>">
 				</div>
 			</div>
 			<div class="form-group" col-lg-8>
-				<label class="control-label col-sm-2">Pais</label>
+				<label class="control-label col-sm-2">País:</label>
 				<div class="col-md-10">
 				  <input type="text" name="país" class="form-control" required="true" value="<?php echo $Libro->país;?>">
 				</div>
 			</div>
 			<div class="form-group" col-lg-8>
-				<label class="control-label col-sm-2">Paginas</label>
+				<label class="control-label col-sm-2">Páginas:</label>
 				<div class="col-md-10">
 				  <input type="text" name="páginas" class="form-control" required="true" value="<?php echo $Libro->páginas;?>">
 				</div>
 			</div>
 			<div class="form-group" col-lg-8>
-				<label class="control-label col-sm-2">URL</label>
+				<label class="control-label col-sm-2">URL:</label>
 				<div class="col-md-10">
 				<input type="text" name="URL" class="form-control"required="true" value="<?php echo $Libro->URL;?>">
 				</div>

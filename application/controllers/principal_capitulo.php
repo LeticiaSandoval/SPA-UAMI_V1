@@ -48,7 +48,7 @@ class Principal_Capitulo extends CI_Controller
 			$páginas=$this->db->escape((int)$_POST["paginas"]);
 			$URL=$this->db->escape($_POST["URL"]);
 
-			if($this->principal_capitulo_model->setCapitulo($titulo_capitulo, $autores, $autoresExternos, $tipo, $estatus,$título_del_libro, (int)$núm_del_capítulo, $editores, $editorial, (int)$ISBN, (int)$año, $país, (int)$paginas, $URL)){
+			if($this->principal_capitulo_model->setCapitulo($titulo_capitulo, $autores, $autoresExternos, $tipo, $estatus,$título_del_libro, (int)$núm_del_capítulo, $editores, $editorial, (int)$ISBN, (int)$año, $país, (int)$páginas, $URL)){
 				header("Location:".base_url()."principal_capitulo/capitulo");
 			}
 		}
@@ -70,6 +70,9 @@ class Principal_Capitulo extends CI_Controller
 			header("Location:".base_url()."principal_capitulo");
 		}
 	}
+
+
+	
 
 	public function actualizarCapitulo(){
 

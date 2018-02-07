@@ -17,20 +17,20 @@
 
 		<table border="1" class="table table-striped table-bordered table-hover table-condensed" class=".table-hover">
 			<tr>
-			<th>TÍTULO DEL CAPÍTULO</th>
-			<th>AUTORES</th>
-			<th>AUTORES EXTERNOS</th>
-			<th>TIPO</th>
-			<th>ESTATUS</th>
-			<th>TÍTULO DEL LIBRO</th>
-			<th>NÚMERO DEL CAPÍTULO</th>
-			<th>EDITORES</th>
-			<th>EDITORIAL</th>
-			<th>ISBN</th>
-			<th>AÑO</th>
-			<th>PAÍS</th>
-			<th>PÁGINAS</th>
-			<th>URL</th>
+			<th class="text-center">TÍTULO DEL CAPÍTULO</th>
+			<th class="text-center">AUTORES</th>
+			<th class="text-center">AUTORES EXTERNOS</th>
+			<th class="text-center">TIPO</th>
+			<th class="text-center">ESTATUS</th>
+			<th class="text-center">TÍTULO DEL LIBRO</th>
+			<th class="text-center">NÚMERO DEL CAPÍTULO</th>
+			<th class="text-center">EDITORES</th>
+			<th class="text-center">EDITORIAL</th>
+			<th class="text-center">ISBN</th>
+			<th class="text-center">AÑO</th>
+			<th class="text-center">PAÍS</th>
+			<th class="text-center">PÁGINAS</th>
+			<th class="text-center">URL</th>
 			<th colspan="2">OPCIONES</th>
 			</tr>
 
