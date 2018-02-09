@@ -20,7 +20,7 @@
 			<div class="form-group">
 				<label class="control-label col-md-2">ID:</label>
 				<div class="col-md-10">
-					<input type="text" readonly="true" class="form-control" name="id_libro" value="<?php echo $Capitulo->id_capituloLibro;?>">
+					<input type="text" readonly="true" class="form-control" name="id_capituloLibro" value="<?php echo $Capitulo->id_capituloLibro;?>">
 				</div>
 			</div>
 			<div class="form-group">
