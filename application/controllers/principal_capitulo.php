@@ -45,7 +45,7 @@ class Principal_Capitulo extends CI_Controller
 			$ISBN=$this->db->escape((int)$_POST["ISBN"]);
 			$año=$this->db->escape((int)$_POST["año"]);
 			$país=$this->db->escape($_POST["país"]);
-			$páginas=$this->db->escape((int)$_POST["paginas"]);
+			$paginas=$this->db->escape((int)$_POST["paginas"]);
 			$URL=$this->db->escape($_POST["URL"]);
 
 			if($this->principal_capitulo_model->setCapitulo($titulo_capitulo, $autores, $autoresExternos, $tipo, $estatus,$título_del_libro, (int)$núm_del_capítulo, $editores, $editorial, (int)$ISBN, (int)$año, $país, (int)$páginas, $URL)){
