@@ -11,12 +11,14 @@
 <body>
 <h2>Capítulo de libro</h2>
 
-       <a href="<?= base_url()?>principal_capitulo">Agregar capítulo de libro</a>
-	<div class="col-lg-10">
+       <h3 class="text-right"><a href="<?= base_url()?>principal_capitulo"><span class="glyphicon glyphicon-plus"></span>Añadir</a></h3>
+       <br>
+	<div class="col-lg-12">
 	<div class="table-responsive">
 
-		<table border="1" class="table table-striped table-bordered table-hover table-condensed" class=".table-hover">
-			<tr>
+		<table border="1" class="table table-striped table-bordered table-hover table-condensed" class=".table-hover" class="tablibro">
+			<thead class="thead-inverse">
+			<tr class="bg-success">
 			<th class="text-center">TÍTULO DEL CAPÍTULO</th>
 			<th class="text-center">AUTORES</th>
 			<th class="text-center">AUTORES EXTERNOS</th>
@@ -33,6 +35,9 @@
 			<th class="text-center">URL</th>
 			<th colspan="2">OPCIONES</th>
 			</tr>
+				
+			</thead>
+			
 
 		<?php
 			foreach ($Capitulos as $capitulo) {
@@ -50,8 +55,8 @@
 				"<td>".$capitulo->país."</td>".
 				"<td>".$capitulo->paginas."</td>".
 				"<td>".$capitulo->URL."</td>".
-				"<td><a href='editar_Capitulo/".$capitulo->id_capituloLibro."'><span class='glyphicon glyphicon-user'></span>Editar</a></td>".
-				"<td><a href='eliminarCapitulo/".$capitulo->id_capituloLibro."'><span class='glyphicon glyphicon-user'></span>Eliminar</a></td>".
+				"<td><a href='editar_Capitulo/".$capitulo->id_capituloLibro."'><span class='glyphicon glyphicon-pencil'></span>Editar</a></td>".
+				"<td><a href='eliminarCapitulo/".$capitulo->id_capituloLibro."'><span class='glyphicon glyphicon-trash'></span>Eliminar</a></td>".
 				"</tr>";
 			}
 		?>

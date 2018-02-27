@@ -10,9 +10,9 @@
 
  </section>
 <body>
-    <div class="container">
+    <div class="container bg-fondo-claro">
 	<div class="col-sm-8 col-sm-offset-2 myform-cont">
-		<form class="form-horizontal" method="post" action="principal_capitulo/guardarRegistroCapitulo">
+		<form class="form-horizontal" method="post" action="principal_capitulo/guardarRegistroCapitulo" style="background-color:rgba(0, 0, 0, 0.3);">
 		<div class="myform-top">
                   <div class="myform-top-left">
                       <h3>Registrar capítulo de libro</h3>
@@ -23,28 +23,28 @@
 
 			<div class="form-group">
 				<label class="control-label col-md-2" for="Título del Capitulo">Título del Capítulo:</label>
-				<div class="col-md-10">
-					<input type="text" name="titulo_capitulo" class="form-control" placeholder="Título del capítulo">
+				<div class="col-md-9">
+					<input type="text" name="titulo_capitulo" class="form-control" placeholder="Título del capítulo" style="background-color:white" >
 				</div>
 			</div>
 
 			<div class="form-group">
 				<label class="control-label col-md-2">Autores:</label>
-				<div class="col-md-10">
-					<input type="text" name="autores" class="form-control" required="true" placeholder="Aturores">
+				<div class="col-md-9">
+					<input type="text" name="autores" class="form-control" required="true" placeholder="Autores">
 				</div>
 			</div>
 
 			<div class="form-group">
 				<label class="control-label col-md-2">Autores externos:</label>
-				<div class="col-md-10">
+				<div class="col-md-9">
 					<input type="text" name="autoresExternos" class="form-control" placeholder="Autores externos" required="true">
 				</div>
 			</div>
 
 			<div class="form-group">
 				<label class="control-label col-md-2">Tipo:</label>
-				<div class="col-md-10">
+				<div class="col-md-9">
 					<select name="tipo" class="form-control" required="true">
 					<option value="Docencia">Docencia</option>
 					<option value="Divulgación">Divulgación</option>
@@ -55,7 +55,7 @@
 
 			<div class="form-group">
 				<label class="control-label col-md-2">Estatus:</label>
-				<div class="col-md-10">
+				<div class="col-md-9">
 					<select name="estatus" class="form-control" required="true">
 					<option value="Aceptado">Aceptado</option>
 					<option value="En prensa">En prensa</option>
@@ -66,28 +66,28 @@
 
 			<div class="form-group">
 				<label class="control-label col-md-2">Título del Libro:</label> 
-				<div class="col-md-10">
+				<div class="col-md-9">
 					<input type="text" name="título_del_libro" class="form-control" placeholder="Título del libro" required="true">
 				</div>
 			</div>
 
 			<div class="form-group">
 				<label class="control-label col-md-2">Número del capítulo:</label> 
-			    <div class="col-md-10">
+			    <div class="col-md-9">
 			    	<input type="text" name="núm_del_capítulo" class="form-control" placeholder="Número del capítulo" required="true">
 			    </div>
 			</div>
 
 			<div class="form-group">
 				<label class="control-label col-md-2">Editores:</label> 
-				<div class="col-md-10">
+				<div class="col-md-9">
 					<input type="text" name="editores" class="form-control" placeholder="Editores" required="true">
 				</div>
 			</div>
 
 			<div class="form-group">
 				<label class="control-label col-md-2">Editorial:</label>
-				<div class="col-md-10">
+				<div class="col-md-9">
 					<input type="text" name="editorial" class="form-control" placeholder="Editorial" required="true">
 				</div>
 				
@@ -95,39 +95,39 @@
 
 			<div class="form-group">
 				<label class="control-label col-md-2">ISBN:</label>
-				<div class="col-md-10">
+				<div class="col-md-9">
 					<input type="text" name="ISBN" class="form-control" placeholder="ISBN" required="true">
 				</div>
 			</div>
 
 			<div class="form-group">
 				<label class="control-label col-md-2">Año:</label>
-				<div class="col-md-10">
+				<div class="col-md-9">
 					<input type="text" name="año" class="form-control" placeholder="Año" required="true">
 				</div>
 			</div>
 
 			<div class="form-group">
 				<label class="control-label col-md-2">País:</label>
-				<div class="col-md-10">
+				<div class="col-md-9">
 					<input type="text" name="país" class="form-control" placeholder="País" required="true">
 				</div>
 			</div>
 			
 			<div class="form-group">
 				<label class="control-label col-md-2">Páginas:</label>
-				<div class="col-md-10">
+				<div class="col-md-9">
 					<input type="text" name="paginas" class="form-control" placeholder="Paginas" required="true">
 				</div> 
 			</div>
 
 			<div class="form-group">
 				<label class="control-label col-md-2">URL:</label>
-				<div class="col-md-10">
+				<div class="col-md-9">
 					<input type="text" name="URL" class="form-control" placeholder="URL" required="true">
 				</div>
 			</div>
-
+           
 			<input type="submit" class="btn btn-primary" name="" value="Guardar">
 			<input type="reset" class="btn btn-ganger" value="Limpiar" name="">
 

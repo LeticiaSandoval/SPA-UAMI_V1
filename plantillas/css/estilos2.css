@@ -76,6 +76,10 @@ h3 {
     background-color: #212F3C;
     
 }
+.myform-cont{
+        border-radius: 0 0 10px 10px;
+}
+
 .myform-top-left { 
     float: left;
     width: 75%;
@@ -121,15 +125,15 @@ input[type="password"]:focus,
 textarea:focus, 
 textarea.form-control:focus {
     background: #fff;
-    border: 2px solid #1AAE88;
+    border: 2px solid #145A32  ;
 }
 
 button.mybtn {
     height: 50px;
     background: #1AAE88;
     border: 0;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 50;
     line-height: 40px;
     color: #fff;
     -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;

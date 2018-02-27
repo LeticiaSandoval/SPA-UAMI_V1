@@ -1,6 +1,10 @@
 
 <footer class="footer2">
- <hr>
+  <div class="container">
+      <p>Universidad Autónoma Metropolitana, Unidad Iztapalapa </p>
+            
+   </div>  
+    
     
 </footer>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

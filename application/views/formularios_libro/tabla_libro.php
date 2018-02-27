@@ -11,17 +11,19 @@
 <body>
 	<h2>Libro</h2>
 
-	 <a href="<?= base_url()?>principal_libro/"> Agregar libro</a>
-       </div>
-	<div class="col-lg-10">
+	 <h3 class="text-right"><a href="<?= base_url()?>principal_libro/"> <span class="glyphicon glyphicon-plus"></span>Añadir</a> </h3>
+	 <br>
+	       
+	<div class="col-lg-12">
 	<div class="table-responsive">
 
 		<table border="1" class="table table-striped table-bordered table-hover table-condensed" class=".table-hover" >
-			<tr>
+			<thead>
+			<tr class="bg-success">
 			<th class="text-center">TÍTULO DEL LIBRO</th>
 			<th class="text-center">AUTORES</th>
 			<th class="text-center">AUTORES EXTERNOS</th>
-			<th class="text-center">TIPO</th>
+			<th class="text-center" >TIPO</th>
 			<th class="text-center">ESTATUS</th>
 			<th class="text-center">EDITORIAL</th>
 			<th class="text-center">EDITORES</th>
@@ -32,6 +34,7 @@
 			<th class="text-center">URL</th>
 			<th colspan="2">OPCIONES</th>
 			</tr>
+			</thead>
 
 		<?php
 			foreach ($Libros as $libro) {
@@ -47,8 +50,8 @@
 				"<td>".$libro->país."</td>".
 				"<td>".$libro->páginas."</td>".
 				"<td>".$libro->URL."</td>".
-				"<td><a href='editar_Libro/".$libro->id_libro."'><span class='glyphicon glyphicon-user'></span>Editar</a></td>".
-				"<td><a href='eliminarLibro/".$libro->id_libro."'><span class='glyphicon glyphicon-user'></span>Eliminar</a></td>".
+				"<td><a href='editar_Libro/".$libro->id_libro."'><span class='glyphicon glyphicon-pencil'></span>Editar</a></td>".
+				"<td><a href='eliminarLibro/".$libro->id_libro."'><span class='glyphicon glyphicon-trash'></span>Eliminar</a></td>".
 				"</tr>";
 			}
 		?>

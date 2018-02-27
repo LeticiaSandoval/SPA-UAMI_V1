@@ -40,7 +40,7 @@
         <li><a href="#">Revista</a></li>      
        </ul>
       </li>
-      <li class="active" class="menu"><a href="#">Infraestructura</a></li>
+      <li  class="active" class="menu"><a href="#">Infraestructura</a></li>
      </ul> 
     </div> 
   </nav>
