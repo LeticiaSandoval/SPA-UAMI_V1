@@ -22,26 +22,27 @@
     </div>
 
     <!-- Aqui se iniciara el menu-->
-    <div class="collapse navbar-collapse" id="navegacion" > 
+    <div class="collapse navbar-collapse navbar-inverse" id="navegacion" > 
      <ul class="nav navbar-nav">     
-      <li class="active" class="menu"><a href="#">Inicio</a></li>
-      <li class="active" class="menu"><a href="#">Perfil</a></li>
-      <li class="active" class="menu"><a href="#">Investigación</a></li>
-      <li class="active" class="menu" >
+      <li class="menu"><a href="#">Inicio</a></li>
+      <li class="menu"><a href="#">Perfil</a></li>
+      <li class="menu"><a href="#">Investigación</a></li>
+      <li  class="menu" >
        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expended="false">
        Productividad académica 
-       <span class="caret"></span>
        </a>
         <ul class="dropdown-menu" role="menu">
-        <li><a href="#"></a></li>
-        <li role="separator" class="divider"></li>
-        <li><a href="<?= base_url()?>principal_libro/libro">Libro</a></li>
-        <li><a href="<?= base_url()?>principal_capitulo/capitulo">Capítulo de libro</a></li> 
-        <li><a href="#">Revista</a></li>      
+        
+        <li class="menu"><a href="<?= base_url()?>principal_libro/libro">Libro</a></li>
+        <li class="menu"><a href="<?= base_url()?>principal_capitulo/capitulo">Capítulo de libro</a></li> 
+        <li class="menu"><a href="#">Revista</a></li>      
        </ul>
       </li>
-      <li  class="active" class="menu"><a href="#">Infraestructura</a></li>
+      <li class="menu"><a href="#">Infraestructura</a></li>
      </ul> 
+     <ul class="nav navbar-nav navbar-right">
+       <li><a href="<?= base_url()?>inicio"><button class="btn btn-default btn-lg" type="button" class="botonEntrar"> Cerrar sesión </button></a></li>
+     </ul>
     </div> 
   </nav>
  </header>

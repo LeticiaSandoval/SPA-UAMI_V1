@@ -6,7 +6,7 @@
  </div>
     
       <div class="row">
-         <div class="col-sm-6 col-sm-offset-3 myform-cont" >
+         <div class="col-sm-4 col-sm-offset-4 myform-cont" >
               <div class="myform-top">
                   <div class="myform-top-left">
                       <h3>Ingresar</h3>

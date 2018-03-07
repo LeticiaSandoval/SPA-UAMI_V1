@@ -22,10 +22,13 @@
     </div>
 
     <!-- Aqui se iniciara el menu-->
-    <div class="collapse navbar-collapse" id="navegacion" > 
+    <div class="collapse navbar-collapse navbar-inverse" id="navegacion" > 
      <ul class="nav navbar-nav">     
-      <li class="active" class="menu"><a href="<?= base_url()?>inicio/pagPrincipal">Inicio</a></li>          
+      <li class="menu"><a href="<?= base_url()?>inicio/pagPrincipal">Inicio</a></li>          
     </ul> 
+    <ul class="nav navbar-nav navbar-right">
+       <li><a href="<?= base_url()?>inicio"><button class="btn btn-default btn-lg" type="button" class="botonEntrar"> Cerrar sesión </button></a></li>
+     </ul>
     </div> 
   </nav>
  </header>
