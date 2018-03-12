@@ -9,7 +9,7 @@
 <body>
 <h2>Capítulo de libro</h2>
 
-       <h3 class="text-right"><a href="<?= base_url()?>principal_capitulo"><span class="glyphicon glyphicon-plus"></span>Añadir</a></h3>
+       <h4 class="text-right"><a href="<?= base_url()?>principal_capitulo"><span class="glyphicon glyphicon-plus"></span>Añadir</a></h4>
        <br>
 	<div class="col-lg-12">
 	<div class="table-responsive">
